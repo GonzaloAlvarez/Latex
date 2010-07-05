@@ -341,13 +341,15 @@
     \ifx#6\else{\newline{}\begin{minipage}[t]{\linewidth}\small#6\end{minipage}}\fi
     }}%
 
-\newcommand*{\cvskill}[2]{\cvline{#1}{\slshape#2}}
+%\newcommand*{\cvskill}[2]{\cvline{#1}{\slshape#2}}
 
 
 % usage (inside 'language' cvsection environment): \cvlanguage{name}{level}{comment}
 %\newcommand*{\cvlanguage}[3]{%
 %  \cvline{#1}{\begin{minipage}[t]{.225\maincolumnwidth}\textbf{#2}\end{minipage}\hfill\begin{minipage}[t]{0.725\maincolumnwidth}\raggedleft\footnotesize\itshape #3\end{minipage}}}
 \newcommand*{\cvlanguage}[3]{\cvline{#1}{{\bfseries#2} { \slshape\small#3}}}
+
+\newcommand*{\cvskill}[2]{\cvline{#1}{\small\texttt{#2}}}
 
 % usage (inside 'computer skills' cvsection environment): \cvcomputer{category}{programs}{category}{programs}
 \newcommand*{\cvcomputer}[4]{%
