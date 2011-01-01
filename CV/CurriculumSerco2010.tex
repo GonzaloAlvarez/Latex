@@ -19,7 +19,7 @@
 \usepackage{hyperref}
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.80]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 \AtBeginDocument{\setlength{\maketitlenamewidth}{10cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 \AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
@@ -29,8 +29,8 @@
 \familyname{Alvarez}
 \title{Curriculum Vitae}               % optional, remove the line if not wanted
 \address{Frankfurter Strasse 11}{64293 - Darmstadt (Germany)}    % optional, remove the line if not wanted
-\mobile{0176 77 15 1929}                    % optional, remove the line if not wanted
-\phone{0615 190 2368}                      % optional, remove the line if not wanted
+\mobile{0049 176 7715 1929}                    % optional, remove the line if not wanted
+\altmobile{0034 678 252 458}                      % optional, remove the line if not wanted
 % \fax{fax (optional)}                          % optional, remove the line if not wanted
 \email{gonzaloab@gmail.com}                      % optional, remove the line if not wanted
 \extrainfo{León (Spain), 12.31.81} % optional, remove the line if not wanted
@@ -38,6 +38,14 @@
 % \quote{}                 % optional, remove the line if not wanted
 
 \nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+\newenvironment{pitems}{
+	\begin{itemize}
+	\setlength{\itemsep}{1pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+}{\end{itemize}}
 
 
 %----------------------------------------------------------------------------------
@@ -51,23 +59,48 @@
 \cventry{2005--2007}{Master's Final Project}{Vigo University}{ASP Web Environment development}{}{}{}
 
 \section{Work Experience}
-\cventry{2009--Today}{Software Engineer at ESOC/ESA}{Serco Contractor on site at ESOC/ESA OPS-GIB Section}{Darmstadt, Germany}{Involved in the development of the European Space Ground Station Software. Ground Station Software Testing and Validation. Telemetry and Telecomand System Engineer. Ground Segment User Desktop Software Developer as Scrum Master. Other internal activities}{}
-\cventry{2008--2009}{YGT at ESOC/ESA}{Young Graduate Trainee at ESOC/ESA OPG-GIB Section}{Darmstadt, Germany}{Development of an internal MIMIC prototype based on Eclipse for Ground Operation Software. Involved in many other internal activities}{}
-\cventry{2007--2007}{Teacher of Project Management}{Project Management Seminars provided to IMERYS IKF Inc.}{A Guarda, Pontevedra, Spain}{Enterprise Course Teacher for Norformacion - Fundación Tripartita to IMERYS IKF Inc}{}
-\cventry{2005--2006}{Contracted Researcher}{Vigo University, Spain}{Development of JPoEML, a MIMIC Java based Environment for PoEML, an educational modeling language}{}{}
-\cventry{2003--2007}{Network Resources Administrator}{Local and national enterprises solutions}{Vigo, Spain}{e.g. www.hotelutopia.es}{}
-\cventry{1998--2003}{Freelance Web Developer}{Web sites for local enterprises}{León, Spain}{}{}
+\ccventry{2009--Today}{System and Software Engineer at European Space Agency Operation Centre (ESOC/ESA)}{Serco Contractor on site at ESOC/ESA OPS-GIB Section}{Darmstadt, Germany}
+{. Activities:
+\begin{pitems}
+\item $-$ \textsl{Validation Engineer:} Definition and application of validation procedures and documentations for several 
+	projects deployed on ESA Ground Stations like FIDES (File Disseminator for ESTRACK Ground Stations) or 
+	FARC (File Archive used as SCOS telemetry storage).
+\item $-$ \textsl{TMTCS Engineer:} Technical responsible for the Telemetry and Telecommand System maintainence. In charge of the
+	continous validation and integration of the system. Creation of the appropiate SPRs, SCRs and Technical Notes related
+	to the day-to-day work by using several tools, such as DOORS, Mercury Quality Center and Synergy, among others.
+\item $-$ \textsl{Scrum Master and Software Engineer:} Developer and Software Architect of several applications used in
+	the ESTRACK Ground Stations inline with the European Space Ground Operations Software, such as EUDGSSC (a Rich Client
+	Application for interacting with the Subsystems Controllers) or the EUD MIMICS (a mimic platform to provide a graphical
+	environment for the EGOS Applications).
+\item $-$ \textsl{Server Administrator:} System administrator of the Ground Infrastructure Back-end Server used for
+	active development activities and documentation.
+\item $-$ \textsl{Technical Consultor:} Participation in Technical Comitees and Task Forces as Advisor in many internal
+	projects and activities, such as FEC Evolution, STC2, GSMC and so on.
+\end{pitems}}
+\ccventry{2008--2009}{YGT at ESOC/ESA}{Young Graduate Trainee at ESOC/ESA OPG-GIB Section}{Darmstadt, Germany}
+{. Activities:
+\begin{pitems}
+\item $-$ \textsl{Validation Engineer:} Technical advisor and supervisor of the Factory Acceptance Tests for the
+	Egos User Desktop and Technical manager for the Site Acceptance Tests.
+\item $-$ \textsl{Software Engineer:} Technical revision for the requirements of the MIMIC project and development 
+	of an internal prototype based on Eclipse using EMF, GEF and GMF. 
+\end{pitems}}
+\cventry{2007--2007}{Teacher of Project Management}{Project management seminars provided to IMERYS IKF Inc.}{A Guarda, Pontevedra, Spain}{Enterprise course teacher for Norformacion - Fundación Tripartita to IMERYS IKF Inc}{}
+\cventry{2005--2006}{Contracted Researcher}{Vigo University, Spain}{Development of JPoEML, 
+	a Java tool (mimic oriented) for designing and producing an E-Learning web environment that uses XML and J2EE to serve
+	the desired learning models to the users over the web.}{}{}
+\cventry{1999--2005}{Network Administrator and Web Developer}{Freelance web developer and network administrator for local 
+	and national enterprises}{Vigo, Spain}{}{}
 
 \section{Professional Training}
 \cventry{Apr 2010}{Agile Development Technologies}{The Server Labs}{ESOC, Darmstadt, Germany}{Software Development using Agile Metodology and SCRUM Techniques}{}
 \cventry{Feb 2009}{Eclipse EMF, GEF and GMF Technologies}{OBEO Eclipse Foundation Member}{ESOC, Darmstadt, Germany}{Development of Eclipse Applications based on EMF/GEF and GMF}{}{}
 
-\pagebreak 
 
 \section{Languages}
 \cvlanguage{Spanish}{Mother Tongue}{}
-\cvlanguage{English}{Fluent}{Over two years working in English at the European Space Agency. Six months living in Toronto, Canada.}
-\cvlanguage{German}{Good}{Over two years living in Germany, Goethe Institut level B2.}
+\cvlanguage{English}{Fluent}{Three years working in English at the European Space Agency. Six months living in Toronto, Canada.}
+\cvlanguage{German}{Good}{Three years living in Germany, Goethe Institut level B2.}
 \cvlanguage{Italian}{Basic}{Internal courses at ESOC/ESA.}
 
 \section{Software Development}

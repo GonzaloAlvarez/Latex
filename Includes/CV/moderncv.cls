@@ -234,6 +234,7 @@
 \renewcommand*{\title}[1]{\def\@title{#1}}
 \newcommand*{\address}[2]{\def\@addressstreet{#1}\def\@addresscity{#2}}
 \newcommand*{\mobile}[1]{\def\@mobile{#1}}
+\newcommand*{\altmobile}[1]{\def\@altmobile{#1}}
 \newcommand*{\phone}[1]{\def\@phone{#1}}
 \renewcommand*{\fax}[1]{\def\@fax{#1}}
 \newcommand*{\email}[1]{\def\@email{#1}}
@@ -339,6 +340,14 @@
     \ifx#5\else{, #5}\fi%
     .%
     \ifx#6\else{\newline{}\begin{minipage}[t]{\linewidth}\small#6\end{minipage}}\fi
+    }}%
+
+\newcommand*{\ccventry}[5]{%
+  \cvline{#1}{%
+    {\bfseries#2}%
+    \ifx#3\else{, {\slshape#3}}\fi%
+    \ifx#4\else{, #4}\fi%
+    \ifx#5\else{#5}\fi%
     }}%
 
 %\newcommand*{\cvskill}[2]{\cvline{#1}{\slshape#2}}

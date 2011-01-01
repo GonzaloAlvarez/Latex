@@ -144,6 +144,7 @@
       \addresssymbol~\@addressstreet%
       \ifthenelse{\isundefined{\@addresscity}}{}{\\\@addresscity}}%
     \ifthenelse{\isundefined{\@mobile}}{}{\maketitledetailsnewline\mobilesymbol~\@mobile}%
+    \ifthenelse{\isundefined{\@altmobile}}{}{\maketitledetailsnewline\mobilesymbol~\@altmobile}%
     \ifthenelse{\isundefined{\@phone}}{}{\maketitledetailsnewline\phonesymbol~\@phone}%
     \ifthenelse{\isundefined{\@fax}}{}{\maketitledetailsnewline\faxsymbol~\@fax}%
     \ifthenelse{\isundefined{\@email}}{}{\maketitledetailsnewline\emailsymbol~\emaillink{\@email}}%
