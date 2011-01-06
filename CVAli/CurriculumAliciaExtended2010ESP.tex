@@ -1,0 +1,76 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[blue]{casualg}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{casualg}                % idem
+%\moderncvtheme[roman]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{hyperref}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\AtBeginDocument{\setlength{\maketitlenamewidth}{10cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Alicia}
+\familyname{Minguez}
+\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{Frankfurter Str. 11}{64293 - Darmstadt (Alemania)}    % optional, remove the line if not wanted
+\address{C/ San Roque 45, P16}{28220 - Majadahonda (España)}
+\mobile{0049 177 5137 564}                    % optional, remove the line if not wanted
+\fax{0034 669 496 845}
+% \fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{Alicia.Minguez@googlemail.com}                      % optional, remove the line if not wanted
+\extrainfo{Madrid, 08.09.82} % optional, remove the line if not wanted
+%\photo[64pt]{picture.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+% \quote{}                 % optional, remove the line if not wanted
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Educación}
+\cventry{2004--2007}{Ingeniero Superior de Tecnologías de la Información e Ingeniería Eléctrica}{Technische Universitaet Darmstadt}{Darmstadt, Alemania}{Programa de doble titulación Alemania/España}{}  % arguments 3 to 6 are optional
+\cventry{2001--2007}{Ingeniero Superior de Telecomunicación}{Universidad Politécnica de Madrid}{Madrid}{}{}
+
+\section{Experiencia}
+\cventry{2009--Presente}{Ingeniero de Sistemas de Estaciones Terrenas en la Agencia Espacial Europea (ESOC/ESA)}{Contratista de la empresa Serco en la sección de operaciones OPS-GSY}{Darmstadt, Alemania}{Definición e implementación de bancos de pruebas de integración extremo a extremo para subsistemas del segmento terreno. Colaboración en la definición y el desarrollo de tests de compatibilidad de radiofrecuencia entre el segmento terreno y los transpondedores de satélites. Mantenimiento y operación del laboratorio de referencia de estaciones terrenas existente en la Agencia Espacial Europea. Cooperación con los desarrolladores de subsistemas y los ingenieros encargados de estaciones supervisando y validando las adaptaciones necesarias y revisando la validación de software realizado por empresas externas. Participación en el desarrollo y operación de herramientas de procesado de señal para distintas misiones en Matlab. Gestión de proveedores de equipos electrónicos para estaciones terrenas}{}
+\cventry{2009--2009}{Ingeniero de Software para Antenas}{Contratista de Inform GmbH para MT Mechatronics GmbH}{Mainz, Alemania}{Construcción y puesta en marcha de la nueva antena del proyecto SAR-Lupe Gelsdorf. Diseño y desarrollo del panel de control local de la antena en C++. Desarrollo y validación del software en tiempo real de la unidad de control de la antena en el lenguaje IEC 61131-3, especialmente para el control de los aparatos de radiofrecuencia de la antena}{}{}
+\cventry{2008--2008}{Ingeniero en I+D}{NEC Laboratories Europe}{Heidelberg, Alemania}{Desarrollo de servicios web para aplicaciones de IPTV en el proyecto “Servicios de Valor Añadido en IPTV”, programando en Java con Eclipse}{}{}
+\cventry{2007--2008}{Young Graduate Trainee}{Agencia Espacial Europea (ESOC/ESA) OPS-GDS}{Darmstadt, Alemania}{Análisis y definición de las requerimientos de software para el simulador del satélite de la misión Gaia mediante la herramienta DOORS. Colaboración en la creación de un documento genérico de requerimientos de software para simuladores de satélites. Análisis de requerimientos de software y soporte para el simulador de la misión Lisa Pathfinder}{}{}
+\cventry{2006--2007}{Proyecto Fin de Carrera}{Honda Research Institute Europe GmbH}{Offenbach, Alemania}{Tesis en el área de robótica para el robot Asimo fabricado por Honda. Especialización en el procesado de imagen para el sistema de visión del robot, programando en Matlab. Título: “Level set segmentation with contour based, scale and rotation invariant object representation”}{}{}
+\cventry{2005--2006}{Becaria}{Deutsche Telekom AG}{Darmstadt, Alemania}{Desarrollo y validación del sistema de gestión central de personal para el departamento de IT-Security. Desarrollo de scripts en Javascript y VBScript}{}{}
+
+\section{Idiomas}
+\cvlanguage{Español}{Lengua materna}{}
+\cvlanguage{Inglés}{Muy alto}{Varios años trabajando en inglés en diversas compañías de ámbito internacional.}
+\cvlanguage{Alemán}{Muy alto}{Más de seis años viviendo en Alemania. Más de año y medio trabajando en alemán.}
+\cvlanguage{Francés}{Básico}{}
+
+\section{Conocimientos Técnicos}
+\cvskill{Programación}{C++, IEC 61131-3, Java, Matlab, VB, JavaScript}
+\cvskill{Herramientas}{TwinCAT, DOORS, Eclipse, MS-Office}
+\cvskill{Tecnologías}{Programación de PLC, MFC, Servicios Web, UML, XML, SQL}
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

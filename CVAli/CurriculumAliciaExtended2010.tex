@@ -1,0 +1,77 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[blue]{casualg}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{casualg}                % idem
+%\moderncvtheme[roman]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{hyperref}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\AtBeginDocument{\setlength{\maketitlenamewidth}{10cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Alicia}
+\familyname{Minguez}
+\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{Ludwigstrasse, 13}{64283 - Darmstadt (Germany)}    % optional, remove the line if not wanted
+\mobile{0049 177 5137 564}                    % optional, remove the line if not wanted
+\fax{0034 669 496 845}
+% \fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{Alicia.Minguez@googlemail.com}                      % optional, remove the line if not wanted
+\extrainfo{Madrid, 08.09.82} % optional, remove the line if not wanted
+%\photo[64pt]{picture.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+% \quote{}                 % optional, remove the line if not wanted
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Educación}
+\cventry{2004--2007}{Ingeniero en Ingeniería Eléctrica y Tecnologías de la Información}{Technische Universitaet Darmstadt}{Darmstadt, Alemania}{Programa de doble titulación Alemania/España}{}  % arguments 3 to 6 are optional
+\cventry{2001--2007}{Ingeniero Superior de Telecomunicación}{Universidad Politécnica de Madrid}{Madrid}{}{}
+
+\section{Work Experience}
+\cventry{2009--Present}{Ground Station Systems Engineer at ESOC/ESA}{Serco contractor on site at ESOC/ESA OPS-GSY section}{Darmstadt, Germany}{Definition and implementation of end-to-end testing for ground segment. Collaboration in the implementation of radio frequency compatibility tests for the ground segment / spacecraft equipment. Maintenance and operation of the ground segment reference facilities located in ESOC. Cooperation with subsystem developers and ground station engineers reviewing and validating the tailoring specifications, checking the site acceptance software validation plans}{}
+\cventry{2009--2009}{Antenna Software Engineer}{Inform GmbH contractor at MT Mechatronics GmbH}{Mainz, Germany}{Construction and comissioning of a new antenna for the SAR-Lupe Gelsdorf project. Design and development of local control panel for the antenna. Development and validation of real time software for the Antenna Control Unit}{}{}
+\cventry{2008--2008}{Research Engineer}{NEC Laboratories Europe}{Heidelberg, Germany}{Web services development of IP multimedia subsystem based IPTV applications for the project "IPTV Value Added Services"}{}{}
+\cventry{2007--2008}{Young Graduate Trainee}{ESOC/ESA OPS-GDS section}{Darmstadt, Germany}{Definition and analysis of software requirements for Gaia spacecraft simulator. Collaboration in a generic software requirements specification document for spacecraft simulators. Definition of requirements and support for Lisa Pathfinder spacecraft simulator}{}{}
+\cventry{2006--2007}{Diploma Thesis}{Honda Research Institute Europe GmbH}{Offenbach, Germany}{Digital image processing for the visual system of Honda's robot Asimo}{}{}
+\cventry{2005--2006}{Student Position}{Deutsche Telekom AG}{Darmstadt, Germany}{Development and testing of central identity management system for IT-Security}{}{}
+
+\pagebreak
+
+\section{Languages}
+\cvlanguage{Spanish}{Mother Tongue}{}
+\cvlanguage{English}{Fluent}{Several years working in English in different companies.}
+\cvlanguage{German}{Fluent}{Over five years living and working in Germany.}
+\cvlanguage{French}{Basic}{}
+
+\section{Professional Skills}
+\cvskill{Programming}{C++, IEC 61131-3, Java, Matlab, VB, JavaScript}
+\cvskill{Tools}{TwinCAT, DOORS, Eclipse, MS-Office}
+\cvskill{Technologies}{PLC Programming, MFC, Web Services, UML, XML, SQL}
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

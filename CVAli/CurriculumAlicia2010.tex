@@ -1,0 +1,74 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[blue]{casualg}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{casualg}                % idem
+%\moderncvtheme[roman]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{hyperref}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\AtBeginDocument{\setlength{\maketitlenamewidth}{10cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Alicia}
+\familyname{Minguez}
+\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{Ludwigstrasse, 13}{64283 - Darmstadt (Germany)}    % optional, remove the line if not wanted
+\mobile{0176 2351 1690}                    % optional, remove the line if not wanted
+% \fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{Alicia.Minguez@googlemail.com}                      % optional, remove the line if not wanted
+\extrainfo{Madrid (Spain), 08.09.82} % optional, remove the line if not wanted
+%\photo[64pt]{picture.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+% \quote{}                 % optional, remove the line if not wanted
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2004--2007}{Master's Degree in Electrical Engineering and Information Technology}{Technische Universitaet Darmstadt}{Darmstadt, Germany}{Double degree Spain/Germany}{}  % arguments 3 to 6 are optional
+\cventry{2001--2007}{Master's Degree in Telecommunications Engineering}{Universidad Politecnica de Madrid}{Madrid, Spain}{}{}
+
+\section{Work Experience}
+\cventry{2009--Present}{Ground Station Systems Engineer at ESOC/ESA}{Serco Contractor on site at ESOC/ESA OPS-GSY Section}{Darmstadt, Germany}{Definition and Implementation of End to End Testing for Ground Segment}{}
+\cventry{2009--2009}{Antenna Software Engineer}{Inform GmbH Contractor at MT Mechatronics GmbH}{Mainz, Germany}{Design and Development of local control panel and real time software for the Antenna Control Unit}{}{}
+\cventry{2008--2008}{Research Engineer}{NEC Laboratories Europe}{Heidelberg, Germany}{Web Services Development of IP Multimedia Subsystem based IPTV Applications}{}{}
+\cventry{2007--2008}{Young Graduate Trainee}{ESOC/ESA OPS-GDS Section}{Darmstadt, Germany}{Definition and Analysis of Software Requirements for GAIA Spacecraft Simulator}{}{}
+\cventry{2006--2007}{Diploma Thesis}{Honda Research Institute Europe GmbH}{Offenbach, Germany}{Digital image processing for the visual system of Honda's robot Asimo}{}{}
+\cventry{2005--2006}{Student Position}{Deutsche Telekom AG}{Darmstadt, Germany}{Development and testing of Central Identity Management System for IT-Security}{}{}
+
+\section{Languages}
+\cvlanguage{Spanish}{Mother Tongue}{}
+\cvlanguage{English}{Fluent}{Several years working in English in different companies.}
+\cvlanguage{German}{Fluent}{Over five years living and working in Germany.}
+\cvlanguage{French}{Basic}{}
+
+\section{Professional Skills}
+\cvskill{Programming}{C++, IEC 61131-3, Java, Matlab, VB, JavaScript}
+\cvskill{Tools}{TwinCAT, DOORS, Eclipse, MS-Office}
+\cvskill{Technologies}{PLC Programming, MFC, Web Services, UML, XML, SQL}
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
