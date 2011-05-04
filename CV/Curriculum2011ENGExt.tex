@@ -19,9 +19,9 @@
 \usepackage{hyperref}
 
 % adjust the page margins
-\usepackage[scale=0.78]{geometry}
+\usepackage[scale=0.77]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
-\AtBeginDocument{\setlength{\maketitlenamewidth}{12cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\setlength{\maketitlenamewidth}{10cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 \AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
 % personal data
@@ -56,48 +56,51 @@
 
 \section{Education}
 \cventry{2000--2007}{Master's Degree in Telecommunications Engineering}{Vigo University}{}{}{}  % arguments 3 to 6 are optional
-\cventry{2005--2007}{Master's Final Project}{Vigo University}{ASP Web Environment development.}{}{}{}
+\cventry{2005--2007}{Master's Final Project}{Vigo University}{ASP Web Environment development}{}{}{}
 
 \section{Work Experience}
 \ccventry{2009--Today}{System and Software Engineer at European Space Agency Operation Centre (ESOC/ESA)}{Serco Contractor on site at ESOC/ESA OPS-GIB Section}{Darmstadt, Germany}
 {. Activities:
 \begin{pitems}
-\item $-$ \textsl{Validation Engineer:} Definition and application of validation procedures and documentations for several 
+\item $-$ \textsl{Validation Engineer:} Definition and application of validation procedures and documentation for several 
 	projects deployed on ESA Ground Stations like FIDES (File Disseminator for ESTRACK Ground Stations) or 
 	FARC (File Archive used as SCOS telemetry storage).
 \item $-$ \textsl{TMTCS Engineer:} Technical responsible for the Telemetry and Telecommand System maintenance. In charge of the
 	continous validation and integration of the system. Creation of the appropiate SPRs, SCRs and Technical Notes related
 	to the day-to-day work by using several tools, such as DOORS, Mercury Quality Center and Synergy Database. Participation in
-	the Radio Frecuency Compatibilty Test (RFCT) on the TMTCS side for several missions, such as Yinghuo or Fobos-Grunt.
-    Adaptation of the TMTCS to the ESA Mission Gaia for achieving the higly demanding telemetry rates on the Ground Station
+	the Radio Frequency Compatibility Test (RFCT) on the TMTCS side for several missions, such as Yinghuo or Fobos-Grunt.
+    Adaptation of the TMTCS to the ESA Mission Gaia for achieving the highly demanding telemetry rates on the Ground Station
 	Infrastructure.
 \item $-$ \textsl{Scrum Master and Software Engineer:} Developer and Software Architect of several applications used in
 	the ESTRACK Ground Stations in line with the European Space Ground Operations Software, such as EUDGSSC (a Rich Client
-	Application for interacting with the Subsystems Controllers) or the EUD MIMICS (a mimic platform to provide a graphical
+	Application for interacting with the Subsystem Controllers) or the EUD MIMICS (a mimic platform to provide a graphical
 	environment for the EGOS Applications).
 \item $-$ \textsl{Server Administrator:} System administrator of the Ground Infrastructure Back-end Server used for
 	active development activities and documentation. Setup of the system using Continuous Integration tools, like SVN,
 	Hudson, Trac, Ant, IceScrum among others.
 \item $-$ \textsl{Technical Consultor:} Participation in Technical Comitees and Task Forces as Advisor in many internal
-	projects and activities, such as FEC Evolution, STC2, GSMC and so on.
+	projects and activities, such as FEC Evolution, STC2 and GSMC.
 \end{pitems}}
 \ccventry{2008--2009}{YGT at ESOC/ESA}{Young Graduate Trainee at ESOC/ESA OPG-GIB Section}{Darmstadt, Germany}
 {. Activities:
 \begin{pitems}
 \item $-$ \textsl{Validation Engineer:} Technical advisor and supervisor of the Factory Acceptance Tests for the
-	Egos User Desktop and Technical manager for the Site Acceptance Tests.
+	Egos User Desktop and Technical manager for the Site Acceptance Tests. Validation of FARC from S2K for its use
+	with FIDES under the EGOS Model. 
 \item $-$ \textsl{Software Engineer:} Technical revision for the requirements of the MIMIC project and development 
-	of an internal prototype based on Eclipse using EMF, GEF and GMF. 
+	of an internal prototype based on Eclipse using EMF, GEF and GMF.
+\item $-$ \textsl{Documentation: } Creation of several Technical Notes, SRSs, ICDs, MoMs and other internal documents.
 \end{pitems}}
 \cventry{2007--2007}{Teacher of Project Management}{Project management seminars provided to IMERYS IKF Inc.}{A Guarda, Pontevedra, Spain}
-{Enterprise course teacher for Norformacion - Fundación Tripartita to IMERYS IKF In about Project Management theorical aspects and the use
-of the Microsoft Project for designing Gantt Diagrams and keep track of the project changes.}{}
+{Enterprise course teacher for Norformacion - Fundación Tripartita to IMERYS IKF Inc. about Project Management theorical aspects and the use
+of the Microsoft Project for designing Gantt Diagrams and keeping track of the project changes}{}
 \cventry{2005--2006}{Contracted Researcher}{Vigo University, Spain}{Development of JPoEML, 
 	a Java tool (mimic oriented) for designing and producing an E-Learning web environment that uses XML and J2EE to serve
-	the desired learning models to the users over the web. This tool created from scratch based on the popular JFreeChart 
-	Java Library presented a editing environment similar to a UML Designing Tool used for creating and editing Learning Environments}{}{}
+	the desired learning models to the users over the web. This tool, created from scratch and based on the popular JFreeChart 
+	Java Library, presented an editing environment similar to a UML Designing Tool used for creating and editing Learning Environments}{}{}
 \cventry{1999--2005}{Network Administrator and Web Developer}{Freelance web developer and network administrator for local 
-	and national enterprises}{Vigo, Spain}{}{}
+	and national enterprises. Design and deployment of a set of VPNs to provide media content to final clients through a Web
+	Environment}{Vigo, Spain}{}{}
 
 \section{Professional Training}
 \cventry{Apr 2010}{Agile Development Technologies}{The Server Labs}{ESOC, Darmstadt, Germany}{Software Development using Agile Metodology and SCRUM Techniques}{}
@@ -118,15 +121,17 @@ of the Microsoft Project for designing Gantt Diagrams and keep track of the proj
 \cvskill{Eclipse}{PDE, RCP, SWT, EMF, GEF, GMF, OCL.}
 \cvskill{Distributed}{RCP, Java RMI, CORBA.}
 \cvskill{Scripting}{Python, Bash, Tcl, Perl.}
-\cvskill{Web}{PHP, ASP, JSP, DHTML, XML, CSS, JS, AJAX.}
-\cvskill{CI}{Hudson, SVN, Trac, Ant}
-\cvskill{Agile}{Agilefant, IceScrum, XPlanner}
+\cvskill{Web}{PHP, ASP, JSP, GWT, DHTML, XML, CSS, JS, AJAX.}
+\cvskill{CI}{Hudson, SVN, Trac, Ant.}
+\cvskill{Agile}{Agilefant, IceScrum, XPlanner.}
 \cvskill{Others}{SQL, \TeX.}
 
 \section{Computer Environments}
 \cvline{Unix}{Debian and RedHat Linux, Solaris and Irix System Administration. LAMP.}
 \cvline{Windows}{NT/XP/2003/7 System Administration.}
 \cvline{Networking}{HTTP, DNS, SMTP, FTP, Samba, DHCP, SSH, NFS, Security.}
+\cvline{Virtualization}{Xen, OpenVZ, VirtualBox, VMWare.}
+\cvline{Cloud}{Amazon EC2, Amazon S3, Google Apps.}
 
 \section{Documentation and References}
 \cvline{}{\slshape{Available upon Request.}}
