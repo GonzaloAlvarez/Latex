@@ -19,7 +19,7 @@
 \usepackage{hyperref}
 
 % adjust the page margins
-\usepackage[scale=0.77]{geometry}
+\usepackage[scale=0.8]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 \AtBeginDocument{\setlength{\maketitlenamewidth}{10cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 \AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
@@ -59,15 +59,30 @@
 \cventry{2005--2007}{Master's Final Project}{Vigo University}{ASP Web Environment development}{}{}{}
 
 \section{Work Experience}
-\ccventry{2011--Today}{Senior Systems and Software Engineer}{Senior Consultant at The Server Labs}{Madrid, Spain}
+\ccventry{2011--Today}{Senior System and Software Engineer}{Senior Consultant at The Server Labs}{Madrid, Spain}
 {. Activities:
 \begin{pitems}
-\item $-$ \textsl{Software Engineer - Project FARO:} Development of a blahblah for the BBVA Bank.
-\item $-$ \textsl{Cloud Systems Engineer:} Management and maintainance of the cloud systems.
-\item $-$ \textsl{Technical Consultant:} Participation in the creation of proposals specially related to ESA.
+\item $-$ \textsl{Software Engineer at FARO Project:} Development of a Web Platform for the BBVA Bank based on J2EE. The FARO Project
+	is a Web Environment developed using the well known Controller-Service-DAO pattern based on the Spring Framework. It uses JavaServer Faces
+   	and Primefaces for the presentation layer, Java Persistence API for managing the relational data and OracleDB as Database backend. It has been developed
+	using Agile methodologies based on iterative and incremental development.
+\item $-$ \textsl{Continuous Integration Management at FARO Project:} Management of the CI environment
+	used by the team developing the FARO project involving management of Hudson, SVN and Jira, along with the administration
+	of the remote systems used for Continuous Deployment and Test Environments.
+\item $-$ \textsl{Cloud Systems Engineer:} Maintainance of Cloud Environments based on Amazon Web Services, such as EC2,
+	S3, Elastic IP, Relational Database Services, among others. Development of a Provisioning Tool for Cloud Fast Track
+	in java intended to ease the deployment of common configurations on new clouds.
+\item $-$ \textsl{Technical Consultant:} Participation in the preparation of internal documents and technical proposals.
 \end{pitems}}
 \ccventry{2009--2011}{System and Software Engineer at European Space Agency Operation Centre (ESOC/ESA)}{Serco Contractor on site at ESOC/ESA OPS-GIB Section}{Darmstadt, Germany}
 {. Activities:
+\begin{pitems}
+\item $-$ \textsl{Scrum Master and Software Engineer:} Developer and Software Architect of several applications used in
+	the ESTRACK Ground Stations in line with the European Space Ground Operations Software, such as EUDGSSC (a Rich Client
+	Application for interacting with the Subsystem Controllers) or the EUD MIMICS (a mimic platform to provide a graphical
+	environment for the EGOS Applications).
+\end{pitems}}
+\ccventry{}{}{}{}{
 \begin{pitems}
 \item $-$ \textsl{Validation Engineer:} Definition and application of validation procedures and documentation for several 
 	projects deployed on ESA Ground Stations like FIDES (File Disseminator for ESTRACK Ground Stations) or 
@@ -78,10 +93,6 @@
 	the Radio Frequency Compatibility Test (RFCT) on the TMTCS side for several missions, such as Yinghuo or Fobos-Grunt.
     Adaptation of the TMTCS to the ESA Mission Gaia for achieving the highly demanding telemetry rates on the Ground Station
 	Infrastructure.
-\item $-$ \textsl{Scrum Master and Software Engineer:} Developer and Software Architect of several applications used in
-	the ESTRACK Ground Stations in line with the European Space Ground Operations Software, such as EUDGSSC (a Rich Client
-	Application for interacting with the Subsystem Controllers) or the EUD MIMICS (a mimic platform to provide a graphical
-	environment for the EGOS Applications).
 \item $-$ \textsl{Server Administrator:} System administrator of the Ground Infrastructure Back-end Server used for
 	active development activities and documentation. Setup of the system using Continuous Integration tools, like SVN,
 	Hudson, Trac, Ant, IceScrum among others.
@@ -108,6 +119,8 @@ of the Microsoft Project for designing Gantt Diagrams and keeping track of the p
 \cventry{1999--2005}{Network Administrator and Web Developer}{Freelance web developer and network administrator for local 
 	and national enterprises. Design and deployment of a set of VPNs to provide media content to final clients through a Web
 	Environment}{Vigo, Spain}{}{}
+
+\pagebreak
 
 \section{Professional Training}
 \cventry{Apr 2010}{Agile Development Technologies}{The Server Labs}{ESOC, Darmstadt, Germany}{Software Development using Agile Metodology and SCRUM Techniques}{}
