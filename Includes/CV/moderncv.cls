@@ -186,6 +186,7 @@
 \providecommand*{\phonesymbol}{\Telefon}
 \providecommand*{\faxsymbol}{\FAX}
 \providecommand*{\emailsymbol}{\Letter}
+\providecommand*{\websymbol}{\Mundus}
 
 % colors
 \definecolor{firstnamecolor}{rgb}{0,0,0}
@@ -238,6 +239,7 @@
 \newcommand*{\phone}[1]{\def\@phone{#1}}
 \renewcommand*{\fax}[1]{\def\@fax{#1}}
 \newcommand*{\email}[1]{\def\@email{#1}}
+\newcommand*{\website}[1]{\def\@website{#1}}
 \newcommand*{\extrainfo}[1]{\def\@extrainfo{#1}}
 \def\@photowidth{0pt}
 \newcommand*{\photo}[2][64pt]{\def\@photowidth{#1}\def\@photo{#2}}

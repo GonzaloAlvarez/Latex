@@ -148,6 +148,7 @@
     \ifthenelse{\isundefined{\@phone}}{}{\maketitledetailsnewline\phonesymbol~\@phone}%
     \ifthenelse{\isundefined{\@fax}}{}{\maketitledetailsnewline\faxsymbol~\@fax}%
     \ifthenelse{\isundefined{\@email}}{}{\maketitledetailsnewline\emailsymbol~\emaillink{\@email}}%
+    \ifthenelse{\isundefined{\@website}}{}{\maketitledetailsnewline\websymbol~\httplink{\@website}}%
     \ifthenelse{\isundefined{\@extrainfo}}{}{\maketitledetailsnewline\@extrainfo}%
   \end{minipage}%
   % optional photo
