@@ -339,7 +339,7 @@
     {\bfseries#2}%
     \ifx#3\else{, {\slshape#3}}\fi%
     \ifx#4\else{, #4}\fi%
-    \ifx#5\else{, #5}\fi%
+    \ifx#5\else{. #5}\fi%
     .%
     \ifx#6\else{\newline{}\begin{minipage}[t]{\linewidth}\small#6\end{minipage}}\fi
     }}%
