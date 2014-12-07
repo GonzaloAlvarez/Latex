@@ -1,0 +1,26 @@
+#!/bin/bash
+PDFLATEX=$(which pdflatex)
+SELF_BASE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+BUILD_PATH="$SELF_BASE/output"
+PDFLATEX_OPTS="-output-directory $BUILD_PATH"
+TEXFILE="$SELF_BASE/CV/Curriculum.tex"
+INCLUDES_PATH="$SELF_BASE/Includes/CV"
+TEX_INCLUDES_PATH="$SELF_BASE/tex"
+export TEXMFHOME="$SELF_BASE"
+
+if [ ! -e "$BUILD_PATH" ]; then
+	mkdir -p "$BUILD_PATH"
+fi
+
+rm -Rf "$TEX_INCLUDES_PATH"
+mkdir -p "$TEX_INCLUDES_PATH"
+ln -s "$INCLUDES_PATH" "$TEX_INCLUDES_PATH/latex"
+
+if [ -z "$PDFLATEX" ]; then
+	echo "ERROR: pdflatex does not exist"
+	exit 1
+fi
+
+$PDFLATEX $PDFLATEX_OPTS $TEXFILE
+
+rm -Rf "$TEX_INCLUDES_PATH"
