@@ -6,6 +6,8 @@ PDFLATEX_OPTS="-output-directory $BUILD_PATH"
 TEXFILE="$SELF_BASE/CV/Curriculum.tex"
 INCLUDES_PATH="$SELF_BASE/Includes/CV"
 TEX_INCLUDES_PATH="$SELF_BASE/tex"
+GIT=$(which git)
+GONAL_REPO="git@github.com:GonzaloAlvarez/gonal.git"
 export TEXMFHOME="$SELF_BASE"
 
 if [ ! -e "$BUILD_PATH" ]; then
@@ -24,3 +26,9 @@ fi
 $PDFLATEX $PDFLATEX_OPTS $TEXFILE
 
 rm -Rf "$TEX_INCLUDES_PATH"
+exit 0
+$GIT clone $GONAL_REPO $BUILD_PATH/gonal
+cp $BUILD_PATH/Curriculum.pdf $BUILD_PATH/gonal/static/cv/CV-GonzaloAlvarez.pdf
+cd $BUILD_PATH/gonal
+git commit -a -m "Updated copy of the CV"
+git push
