@@ -26,6 +26,8 @@ fi
 $PDFLATEX $PDFLATEX_OPTS $TEXFILE
 
 rm -Rf "$TEX_INCLUDES_PATH"
+./dropbox_uploader.sh -f .dropbox_uploader upload output/Curriculum.pdf Curriculum.pdf
+./dropbox_uploader.sh -f .dropbox_uploader share Curriculum.pdf
 exit 0
 $GIT clone $GONAL_REPO $BUILD_PATH/gonal
 cp $BUILD_PATH/Curriculum.pdf $BUILD_PATH/gonal/static/cv/CV-GonzaloAlvarez.pdf
