@@ -10,6 +10,10 @@ GIT=$(which git)
 GONAL_REPO="git@github.com:GonzaloAlvarez/gonal.git"
 export TEXMFHOME="$SELF_BASE"
 
+if [ -n "$1" ]; then
+    TEXFILE="$SELF_BASE/$1/Curriculum.tex"
+fi
+
 if [ ! -e "$BUILD_PATH" ]; then
 	mkdir -p "$BUILD_PATH"
 fi
