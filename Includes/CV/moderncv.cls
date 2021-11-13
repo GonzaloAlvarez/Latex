@@ -182,10 +182,10 @@
 % symbols used 
 \providecommand*{\listitemsymbol}{\textbullet}
 \providecommand*{\addresssymbol}{}
-\providecommand*{\mobilesymbol}{\Mobilefone}
+\providecommand*{\mobilesymbol}{\faPhone}
 \providecommand*{\phonesymbol}{\Telefon}
 \providecommand*{\faxsymbol}{\FAX}
-\providecommand*{\emailsymbol}{\Letter}
+\providecommand*{\emailsymbol}{\faInbox}
 \providecommand*{\websymbol}{\Mundus}
 
 % colors
