@@ -19,6 +19,8 @@
 \usepackage{hyperref}
 \usepackage{fmtcount}
 \usepackage{fontawesome}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
 
 % adjust the page margins
 \usepackage[scale=0.84]{geometry}
@@ -65,7 +67,9 @@ Software Leader with 20y of experience designing, developing and delivering succ
 %\begin{pitems}
 
 \section{Experience}
-\ccventry{2017--Present}{Principal Software Engineer}{Amazon Alexa}{Seattle, WA}
+\ccventry{2017--Present\\
+\includegraphics[width=0.17\textwidth,left]{CV/Alexa.png}
+}{Principal Software Engineer}{Amazon Alexa}{Seattle, WA}
 {. 
 \begin{pitems}
 \item \bulletitem \textsl{Long Term Architecture \& Business Alignement:} Defined the high level architecture for B2B products in Alexa, enabling 500+ businesses to offer voice interfaces to  their customers in several segments, including
@@ -79,7 +83,9 @@ Software Leader with 20y of experience designing, developing and delivering succ
 \item \bulletitem \textsl{Critical Path Software Development:} Implemented 30+ critical and foundational software pieces in highly ambiguous environments to unblock projects and align organizational leaders.
 \end{pitems}}
 
-\ccventry{2013--2017}{Senior Software Engineer}{Amazon.com}{Seattle, WA}
+    \ccventry{2013--2017\\[20pt]
+\includegraphics[width=0.10\textwidth,right]{CV/Amazon.png}
+}{Senior Software Engineer}{Amazon.com}{Seattle, WA}
 {. 
 \begin{pitems}
 \item \bulletitem \textsl{Technical Leader Retail Checkout:} Led design and critical path implementations for all Amazon Retail Checkout Experiences, including Buy Now, One Click and Mobile, and defined the path to transition
@@ -91,7 +97,9 @@ Software Leader with 20y of experience designing, developing and delivering succ
 \item \bulletitem \textsl{Scrum Master \& Team Lead:} Mentored and led a team of software engineers and defined processes, such as Agile/Scrum, to increase product delivery pace and predictibility.
 \end{pitems}}
 
-\ccventry{2011--2013}{Senior Systems and Software Architect}{The Server Labs Ltd}{Madrid, Spain}
+    \ccventry{2011--2013\\[20pt]
+\includegraphics[width=0.11\textwidth,right]{CV/TheServerLabs.png}
+}{Senior Systems and Software Architect}{The Server Labs Ltd}{Madrid, Spain}
 {.
 \begin{pitems}
 \item \bulletitem \textsl{ESA Contractor - Software Architect:} Design, implementation and testing of a Private Cloud Environment solution for the
@@ -102,7 +110,9 @@ Software Leader with 20y of experience designing, developing and delivering succ
 	and organizations like ESA, Decathlon or ICCAT. Intensive usage of AWS Solutions, such as EC2, S3, VPC, Route53, ELB, AutoScaling or RDS.
 \end{pitems}}
 
-    \ccventry{2008--2011}{Systems and Software Engineer at European Space Agency (ESOC/ESA)}{OPS-GIB Section}{Darmstadt, Germany}
+    \ccventry{2008--2011\\[32pt]
+\includegraphics[width=0.10\textwidth,right]{CV/ESA.png}
+}{Systems and Software Engineer at European Space Agency (ESOC/ESA)}{OPS-GIB Section}{Darmstadt, Germany}
 {.
 \begin{pitems}
 \item \bulletitem \textsl{Scrum Master and Software Engineer:} Developer and Software Architect of several applications used in
@@ -121,10 +131,14 @@ Software Leader with 20y of experience designing, developing and delivering succ
 	Hudson, Trac, Ant, IceScrum among others.
 \end{pitems}}
 
-\cventry{2005--2006}{Contracted Researcher}{Vigo University, Spain}{Development of JPoEML, 
+\cventry{2005--2006\\[16pt]
+\includegraphics[width=0.04\textwidth,right]{CV/UVigo.png}
+}{Contracted Researcher}{Vigo University, Spain}{Development of JPoEML, 
 	a Java tool (mimic oriented) for designing and producing an E-Learning web environment that uses XML and J2EE to serve
 	the desired learning models to the users over the web. This tool, created from scratch and based on the popular JFreeChart 
 	Java Library, presented an editing environment similar to a UML Designing Tool used for creating and editing Learning Environments}{}{}
+\vspace{12pt}
+
 \cventry{1999--2005}{Network Administrator and Software Developer}{Sofware developer and network administrator for local 
 	and national companies delivering active web services and client applications. Design and deployment of a set of VPNs to provide media 
     content to final clients through a Web Environment}{Spain}{}{}
