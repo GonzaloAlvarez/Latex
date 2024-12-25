@@ -10,8 +10,8 @@
 
 % moderncv themes
 %\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-%\moderncvtheme[blue]{casualg}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-\moderncvtheme[roman]{casualg}                % idem
+\moderncvtheme[blue]{casualg}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[roman]{casualg}                % idem
 %\moderncvtheme[roman]{classic}                % idem
 
 % character encoding
@@ -36,8 +36,8 @@
 \mobile{206 883 7479}                      % optional, remove the line if not wanted
 % \fax{fax (optional)}                          % optional, remove the line if not wanted
 \email{gonzaloab@gmail.com}                      % optional, remove the line if not wanted
-\extrainfo{\faMapMarker \, Seattle, WA \, {\color{sectiontitlecolor}$\bullet$ } \, \faCheck \, Green Card Holder\\~\\ 
-Software Leader with 20y of experience designing, developing and delivering successful products and services}
+\extrainfo{\faMapMarker \, Seattle, WA \, {\color{sectiontitlecolor}$\bullet$ } \, \faCheck \, US \& EU Citizen\\~\\ 
+Software Engineer with 20+ years of experience designing, developing and delivering large scale tech products.}
 % \website{www.gon.al}
 %\extrainfo{León (Spain), 12.31.1981} % optional, remove the line if not wanted
 %\photo[64pt]{picture.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
@@ -67,14 +67,36 @@ Software Leader with 20y of experience designing, developing and delivering succ
 %\begin{pitems}
 
 \section{Experience}
-\ccventry{2017--Present\\
+\ccventry{2024--Present\\
+\includegraphics[width=0.17\textwidth,left]{CV/CapOne.png}
+}{Vice President / Distinguished Engineer}{Capital One}{Seattle, WA / McLean, VA}
+{.
+\begin{pitems}
+\item \bulletitem \textsl{US Card Technical Leadership:} Defined the long term modernization strategy for US Card technical organization (8k engineers), enabling the business to build low-touch
+    products in weeks instead of years, and owning their data products to build 20+ new experiences based on analytics and AI tools (incl. LLM-based solutions).
+\end{pitems}}
+
+\ccventry{2022--2024\\
+\includegraphics[width=0.17\textwidth,left]{CV/FTV.png}
+}{Principal Software Engineer}{Amazon FireTV}{Seattle, WA}
+{.
+\begin{pitems}
+\item \bulletitem \textsl{Externalize Software Product:} Defined a high level tech strategy that enabled FireTV to scale their 3P TV strategy into popular brands and manufacturers, like TCL or Sony.
+    Externalized software stack, built core 3P systems and helped grow the business by 450\% in terms of devices and device models.
+\item \bulletitem \textsl{Device Validation Strategy:} Designed, built and aligned with industry leaders a highly automated and cutting edge end-to-end 3P and 1P TV device validation strategy including accessories,
+    connecitivy, stability, performance and multi-media stack. This enabled cutting certification time by 60\% using AI Visual Regression tooling and automated test generation.
+\item \bulletitem \textsl{TV Software Stack Bringup:} Defined and implemented a new way of building an on-device software stack, enabling cutting FireOS development cycle by 18+ months, and allowing savings
+    of more than 200MM\$ every year by integrating OEM/ODM software delivery stacks into FireTV's ones.
+\end{pitems}}
+
+\ccventry{2017--2022\\
 \includegraphics[width=0.17\textwidth,left]{CV/Alexa.png}
 }{Principal Software Engineer}{Amazon Alexa}{Seattle, WA}
-{. 
+{.
 \begin{pitems}
-\item \bulletitem \textsl{Long Term Architecture \& Business Alignement:} Defined the high level architecture for B2B products in Alexa, enabling 500+ businesses to offer voice interfaces to  their customers in several segments, including
-    hospitality, residential, workplace, healthcare and senior living. Influenced planning strategy, and organizational goals to increase bottom-line impact for B2B Amazon customers.
-\item \bulletitem \textsl{Product Delivery Focus:} Delivered 150+ Public APIs, UI interfaces and SDKs for an ecosystem of 3P developers to integrate Alexa in their offerings,
+\item \bulletitem \textsl{Long Term Architecture \& Business Alignement:} Defined long term technical strategy for B2B products in Alexa, enabling 5000+ businesses to offer voice interfaces to  more than 20MM customers in several segments, including
+    hospitality, residential, workplace, healthcare and senior living.
+\item \bulletitem \textsl{Product Delivery Focus:} Delivered 150+ Public APIs for retail and AWS builders, UI interfaces and SDKs for an ecosystem of 3P developers to integrate Alexa in their offerings,
     which allowed 60+ 3P companies to offer voice technologies as part of their products, with low integration effort and high business value.
 \item \bulletitem \textsl{Senior Engineering Leadership:} Mentored and grew 20+ engineers to different levels, and created a technical excellence culture in the team building mechanisms that allowed junior engineers
     to grow, and senior engineers to lead innitiatives and achieve their aspirations.
@@ -86,7 +108,7 @@ Software Leader with 20y of experience designing, developing and delivering succ
     \ccventry{2013--2017\\[20pt]
 \includegraphics[width=0.10\textwidth,right]{CV/Amazon.png}
 }{Senior Software Engineer}{Amazon.com}{Seattle, WA}
-{. 
+{.
 \begin{pitems}
 \item \bulletitem \textsl{Technical Leader Retail Checkout:} Led design, operations and critical path implementations for all Amazon Retail Checkout Experiences, including Desktop, Mobile, One Click and i18n, and defined the path to transition
     the tech stack from Perl-based monolith to federated Java-based Service Oriented Architecture.
@@ -97,20 +119,7 @@ Software Leader with 20y of experience designing, developing and delivering succ
 \item \bulletitem \textsl{Scrum Master \& Team Lead:} Mentored and led a team of software engineers and defined processes, such as Agile/Scrum, to increase product delivery pace and predictibility.
 \end{pitems}}
 
-    \ccventry{2011--2013\\[20pt]
-\includegraphics[width=0.11\textwidth,right]{CV/TheServerLabs.png}
-}{Senior Systems and Software Architect}{The Server Labs Ltd}{Madrid, Spain}
-{.
-\begin{pitems}
-\item \bulletitem \textsl{ESA Contractor - Software Architect:} Design, implementation and testing of a Private Cloud Environment solution for the
-	European Space Agency based on VMWare ESXi, OpenNebula and Chef with its own, custom developed, Web Interface.	
-\item \bulletitem \textsl{Finref Contractor - Engineer Lead:} Development of a Web Platform for the BBVA Bank based on J2EE and Maven using the well known Controller-Service-DAO 
-	pattern based on the Spring Framework for the backend with JPA to connect to the OracleDB and JavaServer Faces and Primefaces for the presentation layer. 
-\item \bulletitem \textsl{Cloud Lead Architect:} Design, implementation and operational support of several cloud based solutions for multinational corporations
-	and organizations like ESA, Decathlon or ICCAT. Intensive usage of AWS Solutions, such as EC2, S3, VPC, Route53, ELB, AutoScaling or RDS.
-\end{pitems}}
-
-    \ccventry{2008--2011\\[32pt]
+    \ccventry{2008--2013\\[32pt]
 \includegraphics[width=0.10\textwidth,right]{CV/ESA.png}
 }{Systems and Software Engineer at European Space Agency (ESOC/ESA)}{OPS-GIB Section}{Darmstadt, Germany}
 {.
@@ -131,7 +140,27 @@ Software Leader with 20y of experience designing, developing and delivering succ
 	Hudson, Trac, Ant, IceScrum among others.
 \end{pitems}}
 
+    \ccventry{2006--2008\\[20pt]
+\includegraphics[width=0.11\textwidth,right]{CV/TheServerLabs.png}
+}{Senior Systems and Software Architect}{The Server Labs Ltd}{Madrid, Spain}
+{.
+\begin{pitems}
+\item \bulletitem \textsl{ESA Contractor - Software Architect:} Design, implementation and testing of a Private Cloud Environment solution for the
+	European Space Agency based on VMWare ESXi, OpenNebula and Chef with its own, custom developed, Web Interface.	
+\item \bulletitem \textsl{Finref Contractor - Engineer Lead:} Development of a Web Platform for the BBVA Bank based on J2EE and Maven using the well known Controller-Service-DAO 
+	pattern based on the Spring Framework for the backend with JPA to connect to the OracleDB and JavaServer Faces and Primefaces for the presentation layer. 
+\item \bulletitem \textsl{Cloud Lead Architect:} Design, implementation and operational support of several cloud based solutions for multinational corporations
+	and organizations like ESA, Decathlon or ICCAT. Intensive usage of AWS Solutions, such as EC2, S3, VPC, Route53, ELB, AutoScaling or RDS.
+\end{pitems}}
+
 \cventry{2005--2006\\[16pt]
+}{Startup Builder + Contractor}{Madrid, Spain}{Built two Internet-based startups, and defined the software stack on those
+    from inception, to final sale and closure. Built a startup which would enable companies to transition their online presence from expensive datacenters to VPS, enabling more than 10 customers
+    to save 300\% in their montly support bill for internet services. Built another startup that would enable distributed storage of data across multiple services, with data being cryptographically
+    secured and allowing saving cost and distributing backups across multiple sites.}{}{}
+\vspace{12pt}
+
+\cventry{2003--2005\\[16pt]
 \includegraphics[width=0.04\textwidth,right]{CV/UVigo.png}
 }{Contracted Researcher}{Vigo University, Spain}{Development of JPoEML, 
 	a Java tool (mimic oriented) for designing and producing an E-Learning web environment that uses XML and J2EE to serve
@@ -143,8 +172,6 @@ Software Leader with 20y of experience designing, developing and delivering succ
 	and national companies delivering active web services and client applications. Design and deployment of a set of VPNs to provide media 
     content to final clients through a Web Environment}{Spain}{}{}
 
-
-\pagebreak
 
 \section{Education}
 \cventry{1999--2005}{Master's Degree in Telecommunications Engineering}{Vigo University}{}{}{}  % arguments 3 to 6 are optional
@@ -165,15 +192,16 @@ Software Leader with 20y of experience designing, developing and delivering succ
 \cventry{Apr 2010}{Agile Development Technologies}{The Server Labs}{ESOC, Darmstadt, Germany}{Software Development using Agile Metodology and SCRUM Techniques}{}
 %\cventry{Feb 2009}{Eclipse EMF, GEF and GMF Technologies}{OBEO Eclipse Foundation Member}{ESOC, Darmstadt, Germany}{Development of Eclipse Applications based on EMF/GEF and GMF}{}{}
 
+\pagebreak
+
 \section{Languages}
 \cvlanguage{Spanish}{Mother Tongue}{}
 \cvlanguage{English}{Fluent}{15+ years as primary workplace language. 5+ years living in the US.}
 \cvlanguage{German}{Good}{More than three years living in Germany, Goethe Institut level B2.}
 
-\pagebreak
 
 \section{Software Development}
-\cvskill{Languages}{Java, C/C++, Python, Pascal, Fortran, Delphi, Visual Basic.}
+\cvskill{Languages}{Java, C/C++, Python, GoLang, Rust, Perl.}
 \cvskill{Eclipse}{PDE, RCP, SWT, EMF, GEF, GMF, OCL.}
 \cvskill{J2EE}{JSF, JPA, Hibernate, JAX-RS, JAX-WS, Liquibase, Spring, Jersey.}
 \cvskill{Scripting}{Bash, Tcl, Perl.}
